@@ -1,6 +1,6 @@
 # AGENTS.md — dsh-plugins
 
-本仓库是 DSH 插件市场的索引仓库，同时是各插件仓库的开发 superproject。
+本仓库（下称 monorepo）是 DSH 插件市场的索引仓库，同时是各插件仓库的开发 Git submodule superproject。
 每个插件仍然是独立的 Git 仓库，以 git submodule 的形式挂在 `plugins/<name>`。
 本仓库不存放插件源码；新插件也不允许直接建成 `plugins/<name>` 的普通目录。
 
@@ -15,7 +15,7 @@
 | `scripts/add-plugin.sh` | 把一个新的独立插件仓库加入为 submodule，并写入 `plugins.txt`。 |
 | `plugins/<name>/` | 插件仓库，代码、测试、tag、README 都在这里。 |
 
-索引安装的是每个插件仓库，不是本 superproject；`index.json` 里的 `source.url` 指向
+索引安装的是每个插件仓库，不是本 monorepo；`index.json` 里的 `source.url` 指向
 `plugins.txt` 中的插件仓库，`source.path` 为空。本仓库的 submodule 只服务于开发工作区。
 
 ## 准备开发环境

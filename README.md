@@ -1,8 +1,8 @@
 # dsh-plugins
 
 One [plugin market index](https://github.com/deepseek-ai/deepseek-harness/blob/master/.agents/notes/implemented/feature/2026-10-02-plugin-market-index-format.md)
-for my DeepSeek Harness plugin bundles, and the superproject that keeps their
-repositories together for development.
+for my DeepSeek Harness plugin bundles, and the monorepo (a Git submodule
+superproject) that keeps their repositories together for development.
 
 Each plugin still lives in its own GitHub repository. This repository adds those
 repositories as Git submodules under `plugins/`, so one clone gives you the index and
@@ -70,7 +70,7 @@ git commit -m "[fix] ..."
 git push origin main
 ```
 
-Then refresh the index from the superproject:
+Then refresh the index from the monorepo root:
 
 ```sh
 cd ../..
@@ -96,8 +96,8 @@ git tag -a v0.1.6 -m v0.1.6
 git push origin main v0.1.6
 ```
 
-Then run `./scripts/check-submodules.sh` and `./scripts/build-index.sh` in the
-superproject, and commit the plugin pointer together with `index.json`.
+Then run `./scripts/check-submodules.sh` and `./scripts/build-index.sh` in the monorepo
+root, and commit the plugin pointer together with `index.json`.
 
 Tags are the published versions. Do not move or delete them; publish a new version
 instead.
