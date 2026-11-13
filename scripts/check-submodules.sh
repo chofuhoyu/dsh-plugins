@@ -68,8 +68,11 @@ for path in $paths; do
   tags=$(git -C "$dir" tag --points-at HEAD | paste -sd, - 2>/dev/null || true)
   [ -n "$tags" ] || tags='no tag at HEAD'
 
-  if ! grep -Eq "^https?://[^[:space:]]*/${name}(\.git)?/?$" "$root/plugins.txt"; then
-    echo "FAIL $name: no HTTPS URL ending in /$name in plugins.txt" >&2
+  url=$(git config -f .gitmodules --get "submodule.$path.url" 2>/dev/null || true)
+  repo=$(basename "${url:-$path}")
+  repo=${repo%.git}
+  if ! grep -Eq "^https?://[^[:space:]]*/${repo}(\.git)?/?$" "$root/plugins.txt"; then
+    echo "FAIL $name: no HTTPS URL ending in /$repo in plugins.txt" >&2
     fail=1
   fi
 

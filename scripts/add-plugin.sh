@@ -75,9 +75,9 @@ fi
 
 git submodule add -b "${PLUGIN_BRANCH:-main}" "$url" "plugins/$name"
 
-if ! node -e "const p=require(process.argv[1]); const b=p.dsh&&p.dsh.bundle; if (!b || !(typeof b.patch === 'string' || (Array.isArray(b.patch) && b.patch.length > 0))) process.exit(1)" "$root/plugins/$name/package.json"; then
-  echo "add-plugin: plugins/$name/package.json does not declare dsh.bundle" >&2
-  echo "add-plugin: fix the package or remove the submodule before continuing" >&2
+if ! node -e "const p=require(process.argv[1]); const b=p.dsh&&p.dsh.bundle; if (!b || p.private === true || typeof p.name !== 'string' || typeof p.version !== 'string' || !(typeof b.patch === 'string' || (Array.isArray(b.patch) && b.patch.length > 0))) process.exit(1)" "$root/plugins/$name/package.json"; then
+  echo "add-plugin: plugins/$name/package.json is not a publishable dsh.bundle package" >&2
+  echo "add-plugin: it needs a name, a version, dsh.bundle.patch, and no private flag" >&2
   exit 1
 fi
 
