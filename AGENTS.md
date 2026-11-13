@@ -129,8 +129,8 @@ git push
    git push
    ```
 
-如果新仓库不在同一个 GitHub owner 下，`add-plugin.sh` 无法把相对/SSH 地址转换成 HTTPS；
-直接传 HTTPS URL 即可，或者手工确认 `plugins.txt` 里的 URL。
+如果新仓库不在同一个 GitHub owner 下，不要用相对地址（它会按本仓库的 owner 解析）；
+直接传 HTTPS 或 GitHub SSH URL 即可，或者手工确认 `plugins.txt` 里的 URL。
 
 ## 脚本
 
@@ -162,9 +162,9 @@ DSH_REPO=/path/to/deepseek-harness ./scripts/build-index.sh
 ./scripts/add-plugin.sh <git-url> [name]
 ```
 
-`name` 省略时取仓库名的最后一段（去掉 `.git`）。支持 HTTPS、SSH 和相对地址；
-相对地址和同 owner 的 SSH 地址会被转换成 HTTPS 写入 `plugins.txt`，因为索引生成器只接受
-HTTPS Git URL。
+`name` 省略时取仓库名的最后一段（去掉 `.git`）。支持 HTTPS、GitHub SSH 和相对地址；
+相对地址按本仓库 origin 的 owner 解析，GitHub SSH 地址保留它自己的 owner，两者都会转换成
+HTTPS 写入 `plugins.txt`，因为索引生成器只接受 HTTPS Git URL。
 
 ## 提交规则
 
