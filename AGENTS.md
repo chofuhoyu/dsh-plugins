@@ -169,7 +169,8 @@ HTTPS 写入 `plugins.txt`，因为索引生成器只接受 HTTPS Git URL。
 ## 提交规则
 
 - 提交信息主题行：`[scope] English imperative sentence`，正文说明改了什么、为什么改。
-- 父仓库常用 scope：`[meta]` 子模块 pin 和布局，`[index]` 只改索引，`[docs]` 文档和脚本。
+- 父仓库常用 scope：`[meta]` 子模块 pin 和布局，`[index]` 只改索引，`[docs]` 文档，
+  `[scripts]` 工具脚本。
 - 插件仓库自己的提交沿用该仓库的习惯；发布提交用 `[release] Bump ...`。
 - `git add` 和 `git commit` 分开执行，提交前看 `git diff --staged`；不要 `git commit -a`。
 - 先提交并推送子模块，再提交父仓库的 gitlink；父仓库不能记录远端不存在的 SHA。
