@@ -129,6 +129,18 @@
       },
       "versions": [
         {
+          "version": "0.3.1",
+          "publishTimestamp": 1794585058,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/chofuhoyu/dsh-review-relay",
+            "commit": "1872b154ddaec82e979e5c93eb07ca15ee605fbe"
+          },
+          "engines": {
+            "dsh": ">=0.2.1-rc.2 <0.3.0"
+          }
+        },
+        {
           "version": "0.3.0",
           "publishTimestamp": 1794584346,
           "source": {
