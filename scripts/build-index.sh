@@ -2,6 +2,9 @@
 # Regenerate index.json from plugins.txt with the DSH reference generator.
 # The generator lives in the DeepSeek Harness source checkout, not in an npm package.
 # Push plugin commits and tags before running this: the generator reads remotes.
+# The title is the market source name shown in the Plugins page; the GitHub handle
+# in it is all lowercase, and it lives here rather than in index.json because the
+# next run overwrites the generated file.
 set -eu
 
 root=$(CDPATH= cd -- "$(dirname "$0")/.." && pwd)
@@ -19,5 +22,5 @@ fi
 exec pnpm --dir "$dsh" --filter @deepseek-ai/dsh-plugin-market-generator start \
   --input "$root/plugins.txt" \
   --output "$root/index.json" \
-  --title "ChofuhoYu DSH Plugins" \
+  --title "chofuhoyu DSH Plugins" \
   --description "Personal DeepSeek Harness plugin bundles by chofu, distributed through GitHub."
