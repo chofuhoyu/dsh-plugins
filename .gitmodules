@@ -1,0 +1,16 @@
+[submodule "plugins/dsh-always-auto"]
+	path = plugins/dsh-always-auto
+	url = ../dsh-always-auto.git
+	branch = main
+[submodule "plugins/dsh-bark-reminder"]
+	path = plugins/dsh-bark-reminder
+	url = ../dsh-bark-reminder.git
+	branch = main
+[submodule "plugins/dsh-cua-switch"]
+	path = plugins/dsh-cua-switch
+	url = ../dsh-cua-switch.git
+	branch = main
+[submodule "plugins/dsh-review-relay"]
+	path = plugins/dsh-review-relay
+	url = ../dsh-review-relay.git
+	branch = main
