@@ -1,0 +1,170 @@
+{
+  "format": 1,
+  "title": "ChofuhoYu DSH Plugins",
+  "description": "Personal DeepSeek Harness plugin bundles by chofu, distributed through GitHub.",
+  "plugins": [
+    {
+      "name": "dsh-always-auto",
+      "title": {
+        "en": "Always Auto",
+        "zh": "始终自动审查"
+      },
+      "description": {
+        "en": "Uses Auto review as the default permission and removes its experimental-enable confirmation.",
+        "zh": "将自动审查设为新会话的默认权限，并移除启用时的风险确认弹窗。"
+      },
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSI+CiAgPHJlY3Qgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiByeD0iNiIgZmlsbD0iIzJGNkJGRiIvPgogIDxwYXRoIGQ9Ik0xMiA0LjVsNiAyLjJ2NS4xYzAgMy42LTIuNCA2LjUtNiA3LjctMy42LTEuMi02LTQuMS02LTcuN1Y2LjdsNi0yLjJ6IiBmaWxsPSIjRkZGRkZGIiBmaWxsLW9wYWNpdHk9Ii4xOCIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjEuNCIvPgogIDxwYXRoIGQ9Ik05IDExLjhsMi4xIDIuMSA0LjItNC4yIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMS42IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==",
+      "author": "chofu",
+      "versions": [
+        {
+          "version": "0.1.2",
+          "publishTimestamp": 1794554092,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/chofuhoyu/dsh-always-auto",
+            "commit": "eb5160a82ad288ce4e60165948a658d1d9541702"
+          },
+          "engines": {
+            "dsh": ">=0.2.2-rc.1 <0.3.0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "dsh-bark-reminder",
+      "title": {
+        "en": "Bark reminders",
+        "zh": "Bark 提醒"
+      },
+      "description": {
+        "en": "Push a Bark notification to your iPhone when DSH requires your attention: approvals, auto-review feedback, sandbox escalation, questions, and finished turns.",
+        "zh": "当 DSH 需要你处理时，通过 Bark 向 iPhone 推送通知：审批、自动审查意见、沙盒权限提升、提问，以及一轮结束。"
+      },
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJCYXJrIHJlbWluZGVyIGJlbGwiPgogIDxkZWZzPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJiYXJrLWJnIiB4MT0iOCIgeTE9IjYiIHgyPSI1NiIgeTI9IjU4IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzNCNkRGMCIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMxRjNGQjAiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHg9IjIiIHk9IjIiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcng9IjE2IiBmaWxsPSJ1cmwoI2JhcmstYmcpIi8+CiAgPHBhdGggZD0iTTMyIDE0Yy03LjE4IDAtMTMgNS44Mi0xMyAxM3Y5LjJsLTMuNiA1LjRjLS43MiAxLjA4LjA1IDIuNTMgMS4zNCAyLjUzaDMwLjUyYzEuMjkgMCAyLjA2LTEuNDUgMS4zNC0yLjUzTDQ1IDM2LjJWMjdjMC03LjE4LTUuODItMTMtMTMtMTNaIiBmaWxsPSIjRjdGOUZGIiBvcGFjaXR5PSIwLjk2Ii8+CiAgPHBhdGggZD0iTTI2LjQgNDYuNmE1LjYgNS42IDAgMCAwIDExLjIgMGgtMTEuMloiIGZpbGw9IiNGN0Y5RkYiIG9wYWNpdHk9IjAuOTYiLz4KICA8Y2lyY2xlIGN4PSI0NiIgY3k9IjE5IiByPSI3IiBmaWxsPSIjRkZCMDIwIi8+CiAgPGNpcmNsZSBjeD0iNDYiIGN5PSIxOSIgcj0iNyIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMUYzRkIwIiBzdHJva2Utd2lkdGg9IjIuNCIvPgo8L3N2Zz4K",
+      "metadata": {
+        "keywords": [
+          "dsh",
+          "deepseek-harness",
+          "plugin",
+          "bundle",
+          "bark",
+          "notification",
+          "reminder"
+        ]
+      },
+      "versions": [
+        {
+          "version": "0.1.5",
+          "publishTimestamp": 1794554092,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/chofuhoyu/dsh-bark-reminder",
+            "commit": "658d3e71ba2cd8693dd722ba419d55d007f098aa"
+          }
+        }
+      ]
+    },
+    {
+      "name": "dsh-cua-switch",
+      "title": {
+        "en": "Cua Driver switch",
+        "zh": "Cua Driver 开关"
+      },
+      "description": {
+        "en": "Own the Cua Driver MCP server: toggle computer use from Plugins and approve desktop write actions.",
+        "zh": "接管 Cua Driver MCP 服务器：在插件页开关电脑操作，并为桌面写操作提供审批。"
+      },
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJDdWEgRHJpdmVyIHN3aXRjaCI+CiAgPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTQiIGZpbGw9IiMxMTE4MjciLz4KICA8cmVjdCB4PSIxMCIgeT0iMjIiIHdpZHRoPSI0NCIgaGVpZ2h0PSIyMCIgcng9IjEwIiBmaWxsPSJub25lIiBzdHJva2U9IiM5Y2EzYWYiIHN0cm9rZS13aWR0aD0iMyIvPgogIDxjaXJjbGUgY3g9IjQyIiBjeT0iMzIiIHI9IjYuNSIgZmlsbD0iIzM0ZDM5OSIvPgogIDxwYXRoIGQ9Ik0yMCAyOHY4TTE2IDMyaDgiIHN0cm9rZT0iI2Y5ZmFmYiIgc3Ryb2tlLXdpZHRoPSIyLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L3N2Zz4K",
+      "metadata": {
+        "keywords": [
+          "dsh",
+          "deepseek-harness",
+          "plugin",
+          "bundle",
+          "cua-driver",
+          "computer-use",
+          "mcp"
+        ]
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1794554092,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/chofuhoyu/dsh-cua-switch",
+            "commit": "e8ed80208ae02bacf9d7a4e8a52db8ba6d8e24f0"
+          },
+          "engines": {
+            "dsh": ">=0.2.2-0 <0.3.0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "dsh-review-relay",
+      "title": {
+        "en": "Review Relay",
+        "zh": "审查回传"
+      },
+      "description": {
+        "en": "Relay Auto review rejection reasons and your note back into the working agent.",
+        "zh": "把 Auto review 的拒绝意见和你在拒绝时写的说明，回传给正在工作的 agent。"
+      },
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IlJldmlldyBSZWxheSI+CiAgPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTQiIGZpbGw9IiMxYjJhNDEiLz4KICA8cGF0aCBkPSJNMTMgMTdoMjVhNiA2IDAgMCAxIDYgNnYxMGE2IDYgMCAwIDEtNiA2SDI1bC05IDh2LThoLTNhNiA2IDAgMCAxLTYtNlYyM2E2IDYgMCAwIDEgNi02eiIgZmlsbD0iIzdjYzRmZiIvPgogIDxwYXRoIGQ9Ik0yMiAyNmgxN00yMiAzMmgxMSIgc3Ryb2tlPSIjMWIyYTQxIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDxwYXRoIGQ9Ik00NyAzMGg0YTYgNiAwIDAgMSA2IDZ2OWE2IDYgMCAwIDEtNiA2aC0ydjZsLTgtNmgtOSIgZmlsbD0iI2ZmZDQ3OSIvPgogIDxwYXRoIGQ9Ik00NiAzOWg1bS01IDVoMyIgc3Ryb2tlPSIjMWIyYTQxIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L3N2Zz4K",
+      "author": "chofu",
+      "homepage": "https://github.com/chofuhoyu/dsh-review-relay#readme",
+      "repository": {
+        "url": "https://github.com/chofuhoyu/dsh-review-relay"
+      },
+      "metadata": {
+        "keywords": [
+          "dsh",
+          "deepseek-harness",
+          "plugin",
+          "bundle",
+          "auto-review",
+          "approval"
+        ]
+      },
+      "versions": [
+        {
+          "version": "0.2.1",
+          "publishTimestamp": 1794551412,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/chofuhoyu/dsh-review-relay",
+            "commit": "6191c89a3098342a35083deff8c319430778f03e"
+          },
+          "engines": {
+            "dsh": ">=0.2.1-rc.2 <0.3.0"
+          }
+        },
+        {
+          "version": "0.2.0",
+          "publishTimestamp": 1793708779,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/chofuhoyu/dsh-review-relay",
+            "commit": "9552b3990c40937fa3e0298acbc94a3b63b7859b"
+          },
+          "engines": {
+            "dsh": ">=0.2.1-rc.2 <0.3.0"
+          }
+        },
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1793110912,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/chofuhoyu/dsh-review-relay",
+            "commit": "f89c2b99630de2e7c9d68ad5d3d60e01dbd12468"
+          },
+          "engines": {
+            "dsh": ">=0.2.1-rc.2 <0.3.0"
+          }
+        }
+      ]
+    }
+  ]
+}

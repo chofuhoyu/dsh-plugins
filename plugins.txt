@@ -1,0 +1,6 @@
+# Source list for the plugin market index: one npm package name or https Git URL per line.
+# https://github.com/deepseek-ai/deepseek-harness/blob/master/apps/plugin-market-generator/README.md
+https://github.com/chofuhoyu/dsh-always-auto
+https://github.com/chofuhoyu/dsh-bark-reminder
+https://github.com/chofuhoyu/dsh-cua-switch
+https://github.com/chofuhoyu/dsh-review-relay
