@@ -33,7 +33,8 @@ dsh-plugins/
 │   ├── dsh-always-auto/        submodule
 │   ├── dsh-bark-reminder/      submodule
 │   ├── dsh-cua-switch/         submodule
-│   └── dsh-review-relay/       submodule
+│   ├── dsh-review-relay/       submodule
+│   └── dsh-search-workspace/   submodule
 └── AGENTS.md                   开发与发布规则
 ```
 
