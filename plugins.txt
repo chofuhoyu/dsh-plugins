@@ -6,3 +6,4 @@ https://github.com/chofuhoyu/dsh-always-auto
 https://github.com/chofuhoyu/dsh-bark-reminder
 https://github.com/chofuhoyu/dsh-cua-switch
 https://github.com/chofuhoyu/dsh-review-relay
+https://github.com/chofuhoyu/dsh-search-workspace

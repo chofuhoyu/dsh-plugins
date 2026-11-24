@@ -189,6 +189,47 @@
           }
         }
       ]
+    },
+    {
+      "name": "dsh-search-workspace",
+      "title": {
+        "en": "Search workspaces",
+        "zh": "搜索工作区"
+      },
+      "description": {
+        "en": "Search workspaces by name or path directly in the left sidebar while keeping session search, and search the New Session workspace picker too. Direct selection, session menus, and workspace management stay available.",
+        "zh": "在左侧栏直接按名称或路径搜索工作区，同时保留会话搜索；新会话的工作区选择也支持搜索，原生选择、会话菜单和工作区管理继续可用。"
+      },
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNiIgaGVpZ2h0PSIzNiIgdmlld0JveD0iMCAwIDM2IDM2IiBmaWxsPSJub25lIj4KICA8cGF0aCBkPSJNNC41IDEyLjJjMC0xLjIyLjk4LTIuMiAyLjItMi4yaDUuMWMuNiAwIDEuMTcuMjQgMS41OS42NmwxLjYgMS42Yy40Mi40Mi45OS42NiAxLjU5LjY2aDguNzJjMS4yMiAwIDIuMi45OCAyLjIgMi4ydjEwLjY4YzAgMS4yMi0uOTggMi4yLTIuMiAyLjJINi43Yy0xLjIyIDAtMi4yLS45OC0yLjItMi4yVjEyLjJaIiBzdHJva2U9IiM2QjdBOTAiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgogIDxwYXRoIGQ9Ik04IDE4LjVoMTEuNSIgc3Ryb2tlPSIjNkI3QTkwIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDxjaXJjbGUgY3g9IjI2LjQiIGN5PSIyNC42IiByPSI0LjYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzJGNkJGRiIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgPHBhdGggZD0iTTI5LjggMjggMzIuNCAzMC42IiBzdHJva2U9IiMyRjZCRkYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+Cjwvc3ZnPgo=",
+      "author": "chofu",
+      "homepage": "https://github.com/chofuhoyu/dsh-search-workspace#readme",
+      "repository": {
+        "url": "https://github.com/chofuhoyu/dsh-search-workspace"
+      },
+      "metadata": {
+        "keywords": [
+          "dsh",
+          "deepseek-harness",
+          "plugin",
+          "bundle",
+          "workspace",
+          "search"
+        ]
+      },
+      "versions": [
+        {
+          "version": "0.0.1",
+          "publishTimestamp": 1794991454,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/chofuhoyu/dsh-search-workspace",
+            "commit": "8ea1ed0d23288c11081f5f0b082f982a88996881"
+          },
+          "engines": {
+            "dsh": ">=0.2.2-rc.1 <0.3.0"
+          }
+        }
+      ]
     }
   ]
 }
